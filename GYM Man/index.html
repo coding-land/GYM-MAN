@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GYM MAN</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Antonio&family=Teko:wght@700&display=swap');
+
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;font-family: 'Antonio', sans-serif;
+    }
+
+  body{
+    overflow-x: hidden;
+  }
+    html {
+      scroll-behavior: smooth;
+    }
+    /* About Section Resposnive */
+    @media(max-width: 1400px) {
+      .about-info-div {
+        display: inline-block;
+        margin-left: 100px;
+        margin-top: 10px;
+        width: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .about-p {
+        width: auto !important;
+      }
+
+      .about-h2 {
+        width: auto !important;
+      }
+
+      .about-info-div {
+        display: inline-block;
+        margin-left: 0px !important;
+        margin-top: 10px;
+      }
+    }
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #dc3545;
+    }
+
+    @media(max-width: 1460px) {
+      .map {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .form {
+        float: none !important;
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-right: 0px !important;
+      }
+    }
+
+    .info {
+      font-weight: bolder;
+      color: white;
+      padding-top: 35vh;
+      padding-left: 150px;
+    }
+
+    .parallax {
+      /* The image used */
+      background-image: url("Images/image2.jpg");
+
+      /* Set a specific height */
+      min-height: 500px;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .bg {
+      position: fixed;
+      top: 0;
+      background-color: transparent;
+      width: 100%;
+      height: 50px;
+      padding: 55px;
+    }
+
+    .insta {
+      animation-name: animate;
+      animation-duration: 0.2s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes animate {
+      0% {
+        position: relative;
+        bottom: -20px;
+        opacity: 0;
+      }
+
+      100% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+
+    .facebook {
+      animation-name: animate;
+      animation-duration: 0.6s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+   @media(max-width: 400px){
+    .div {
+    width: 300px!important;
+    height: 300px!important;
+    border: 2px solid white;
+    background-color: #fff;
+    padding: 30px;
+    overflow: hidden;
+    display: inline-block;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-top: 0px !important;
+    background-color: #212529;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+   }
+    @media (max-width: 1400px) {
+      .div {
+        display: block !important;
+        margin-top: 20px;
+      }
+
+      .parallax {
+        background-image: url(Images/image2.jpg);
+        min-height: 1100px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+    }
+
+    @media(max-width: 1400px) {
+      .trainer-div {
+        flex-wrap: wrap;
+        width: 50vw;
+      }
+
+      .trainer {
+        margin-top: 20px;
+      }
+    }
+
+    @media(max-width: 850px) {
+      .trainer-div {
+        flex-wrap: wrap;
+        width: auto !important;
+      }
+
+      .trainer {
+        margin-top: 20px;
+      }
+
+      .about-img {
+        width: 500px;
+        height: 700px;
+      }
+
+      .display-heading {
+        width: auto !important;
+      }
+    }
+
+    @media(max-width: 602px) {
+      .about-img {
+        width: 400px !important;
+        height: 600px !important;
+      }
+    }
+
+    @media(max-width: 450px) {
+      .div {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+      }
+    }
+
+    @keyframes animate {
+      0% {
+        position: relative;
+        bottom: -20px;
+        opacity: 0;
+      }
+
+      100% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+
+    .twitter {
+      animation-name: animate;
+      animation-duration: 0.4s;
+      animation-iteration-count: 1;
+      margin: 10px;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes animate {
+      0% {
+        position: relative;
+        bottom: -20px;
+        opacity: 0;
+      }
+
+      100% {
+        position: relative;
+        bottom: 0px;
+        opacity: 1;
+      }
+    }
+    .button1{
+      width: 90px;
+      height: 90px;
+      position: absolute;
+      right: 180px;
+      bottom: 50px;
+      border-radius: 50%;
+      background-color: red;
+      border: 2px solid red;
+    }
+    
+
+    svg {
+      display: none;
+    }
+
+    .trainer-info {
+      position: absolute;
+      bottom: 0px;
+      padding: 10px;
+      padding-left: 20px;
+      width: 100%;
+      color: white;
+    }
+
+    .trainer-information {
+      transition: 2s;
+      background-color: red;
+      position: absolute;
+      height: 130px !important;
+      bottom: 0px;
+      padding: 10px;
+      padding-left: 20px;
+      width: 100%;
+      height: 100px;
+      color: white;
+    }
+
+    .img {
+      /* The image used */
+      background: linear-gradient(to right, black , transparent), url("Images/image1.jpg");
+      /* Set a specific height */
+      min-height: 100vh;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .p {
+      width: 500px;
+      display: inline-block;
+      display: none;
+    }
+
+    .div {
+      width: 350px;
+      height: 300px;
+      border: 2px solid white;
+      background-color: #fff;
+      padding: 30px;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .trainer {
+      width: 350px;
+      height: 550px;
+    }
+
+    .div:hover {
+      color: red;
+    }
+
+    .text {
+      float: left;
+      margin-top: 10px;
+      margin-left: 50px;
+    }
+
+    .icon {
+      color: rgb(255, 255, 255);
+      font-size: 12px;
+    }
+
+    .nav-item {
+      margin-left: 20px;
+    }
+
+    span {
+      font-size: 50px;
+      margin-left: 60px;
+      margin-right: 60px;
+      color: red;
+      font-family: monospace!important;
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+      background: red;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+      width: 35px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity .2s ease;
+      border-radius: 30px;
+    }
+
+    .owl-theme .owl-nav [class*=owl-]:hover {
+      background: #ffffff;
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    .btn-14 {
+      border: 2px solid rgb(255, 0, 0);
+      z-index: 1;
+    }
+
+    .btn-14:after {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 100%;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      border: 2px solid rgb(255, 0, 0);
+      background: rgb(255, 0, 0);
+      transition: all 0.3s ease;
+    }
+
+    .btn-14:hover {
+      color: #fff;
+    }
+
+    .buttons-coll {
+      width: 90%;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    .map {
+      border: 0;
+      display: inline-block
+    }
+
+    .custom-btn {
+      padding: 10px 25px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      background: rgb(255, 255, 255);
+      color: rgb(255, 0, 0);
+      outline: none !important;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      position: relative;
+      display: inline-block;
+    }
+
+    .btn-14:hover:after {
+      left: 0;
+      width: 100%;
+    }
+   button{
+    font-family: 'Antonio', sans-serif!important;
+     text-transform: uppercase;
+   }
+    .about-h2 {
+      color: red;
+      width: 700px;
+      font-family: 'Teko', sans-serif;
+      text-transform: uppercase;
+      font-size: 40px;
+    }
+
+    .btn-14:active {
+      top: 2px;
+    }
+
+    .hr {
+      width: 30px;
+      opacity: 1;
+      display: inline-block;
+      position: relative;
+      top: 10px;
+      margin-right: 10px;
+      color: red;
+    }
+
+    .about-img {
+      width: 600px;
+      height: 800px;
+    }
+
+    .about-p {
+      width: 500px;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 40px;
+    }
+
+    .main-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    .about-h4 {
+      color: red;
+      margin-top: 20px;
+    }
+
+    .about-info-div {
+      display: inline-block;
+      margin-left: 100px;
+      margin-top: 10px;
+    }
+
+    .display-heading {
+      font-family: 'Teko', sans-serif;
+      font-size: 70px;
+      text-transform: uppercase;
+      width: 700px;
+    }
+
+    .form {
+      display: inline-block;
+      width: 50%;
+      float: right;
+      padding-right: 50px;
+    }
+
+    .main-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+    }
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0px solid rgba(0, 0, 0, .125);
+      border-radius: 0rem;
+    }
+
+    @media(max-width: 993px) {
+      span {
+        font-size: 50px;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+        color: red;
+        font-family: 'Rubik';
+      }
+
+      .navbar-toggler-icon {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+      }
+      .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        margin-top: 0px !important;
+        background-color: #212529;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        transition: box-shadow .15s ease-in-out;
+      }
+      .bg {
+        position: fixed;
+        top: 0;
+        background-color: #212529!important;
+        width: 100%;
+        height: auto;
+        padding: 55px;
+      }
+    }
+    
+    @media(max-width: 450px) {
+      .about-img {
+        width: 300px !important;
+        height: 500px !important;
+      }
+      .info {
+    font-weight: bolder;
+    color: white;
+    padding-top: 35vh;
+    padding-left: 15px;
+}
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    height: 25vh;
+}
+      .div {
+    margin-left:  0px !important;
+    margin-right: 0px !important;
+    width: 255px!important;
+    height: 300px!important;
+}
+      .trainers-image{
+        display: block !important;
+        width: 100%!important;
+        height: 50vh!important;
+        margin-top: 20px;
+      } 
+    .text {
+      float: none;
+      margin-top: 10px;
+      margin-left: 0px!important;
+    }
+      .trainer{
+        width: 300px!important;
+        height: 500px!important;
+      }
+      .main-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    }
+    }
+    .card-img,
+    .card-img-top {
+      border-top-left-radius: 0rem;
+      border-top-right-radius: 0rem;
+    }
+    @media(min-width: 2000px) and (max-width: 3000px){
+    #Whole-Sections{
+      width: 1600px;
+      margin: auto;
+    }
+    .bg{
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    height: 50px;
+    padding-top: 70px;
+    margin: auto;
+    width: 50%;
+    }
+    }
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 100%;
+      height: 45vh;
+    }
+.social-btn{
+  color: white!important;
+  cursor: pointer;
+}
+.preloader{
+ width: 100px;
+ height: 100px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border-right: 1px solid #EFEFEF;
+ border-left: 1px solid #EFEFEF;
+ border-bottom: 1px solid #EFEFEF;
+ border-top: 1px solid red;
+ animation-name: animation;
+ animation-duration: 2s;
+ animation-iteration-count: infinite;
+ border-radius: 50%;
+}
+@keyframes  animation{
+  0%{
+ border-right: 1px solid #EFEFEF;
+ border-left: 1px solid #EFEFEF;
+ border-bottom: 1px solid #EFEFEF;
+ border-top: 1px solid red;
+ transform: rotate(0deg);
+  }
+  100%{
+ border-top: 1px solid red;
+ transform: rotate(360deg);
+  }
+}
+  </style>
+</head>
+
+<body onload="myfunction()" style="margin:0;">
+  <section id="Whole-Sections">
+  <div class="preloader"id="loader"></div>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"style="font-family: 'Bungee Shade', cursive;color: red;">GYM MAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: #dc3545">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#About">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Trainers">Trainers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Products">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Contact Us">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <section id="Home">
+    <div class="img">
+      <div class="info">
+        <div data-aos="fade-right" data-aos-delay="80" data-aos-duration="2000">
+          <h1 class="display-heading">You are nothing else but what you make of yourself.</h1>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="80" data-aos-duration="2000">
+          <button class="custom-btn btn-14">Read More</button>
+        </div>
+      </div>
+      <a href="video.html"><button class="button1"><i class="fa fa-play icon"></i></button></a>
+    </div>
+    </div>
+  </section>
+  <section id="About" style="overflow: hidden">
+    <center>
+      <h1 class="text-danger my-3">About</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <div class="container-fluid main-container">
+      <div data-aos="fade-right">
+        <img src="Images/about.png" class="about-img">
+      </div>
+      <div data-aos="fade-left">
+        <div class="about-info-div">
+          <h2 class="about-h2">The last three or four reps is what
+            makes the muscle grow. This area of pain divides a champion from someone who is not a champion.
+          </h2>
+          <h4 class="about-h4"> — Arnold Schwarzenegger, seven-time Mr. Olympia</h4>
+          <p class="about-p">We Train You For Your Fit And
+            Active Future We have all the necessary things that will help you in your fitness journey. We have good
+            trainers for your help.</p>
+          <button class="custom-btn btn-14">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Services">
+    <center>
+      <h1 class="text-danger my-3">Services</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <center>
+      <div class="container-fluid">
+        <div class="parallax">
+          <div class="text">
+            <h1
+              style="color: #fff;font-weight: bold;font-family: 'Teko', sans-serif;font-size: 50px;text-transform: uppercase;">
+              Let's Hit The GYM!</h1>
+          </div>
+          <div class="main-div">
+            <div data-aos="fade-up">
+              <div class="div a">
+                <i class="fas fa-dumbbell" style="font-size: 35px;"></i>
+                <h4 style="margin-top: 10px;margin: 30px;">Fitness</h4>
+                <p style="font-family: 'Montserrat', sans-serif;">We have all the important equipment to make you fit and a body builder.</p>
+              </div>
+              <div class="div b" style="margin-left: 30px;margin-right: 30px">
+                <i class="fas fa-clock" style="font-size: 35px;"></i>
+                <h4 style="margin-top: 10px;margin: 30px;">Health</h4>
+                <p style="font-family: 'Montserrat', sans-serif;">We provide you all the necessery proteins and diet for your healthy future.</p>
+              </div>
+
+              <div class="div c">
+                <i class="fas fa-calendar" style="font-size: 35px;"></i>
+                <h4 style="margin-top: 10px;margin: 30px;">Schedule</h4>
+                <p style="font-family: 'Montserrat', sans-serif;">We will make you fit and active with a good schedule for your work and your body.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </section>
+  <section id="Trainers">
+    <center>
+      <h1 class="text-danger my-3">Trainers</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <div class="container d-flex align-items-center justify-content-center my-5 trainer-div">
+      <div data-aos="fade-right">
+        <img src="Images/t1.jpg" class="trainer" style="position: relative">
+        <div class="trainer-info">
+          <div data-aos="fade-right">
+            <h6 style="font-family: 'Rubik', sans-serif;font-weight: 10;">
+              <hr class="hr">Senior Trainer
+            </h6>
+            <h5 style="font-family: 'Rubik', sans-serif;font-weight: bold;">Michael Johnson</h5>
+               <a href="https://instagram.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram insta" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></a>
+               <a href="https://twitter.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-twitter twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a>
+               <a href="https://facebook.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-facebook facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-up" class="me-5 ms-5 trainer-div1">
+        <img src="Images/t2.jpg" class="trainer" style="position: relative">
+        <div class="trainer-info">
+          <div data-aos="fade-up">
+            <h6 style="font-family: 'Rubik', sans-serif;font-weight: 10;">
+              <hr class="hr">Senior Trainer
+            </h6>
+            <h5 style="font-family: 'Rubik', sans-serif;font-weight: bold;">Michael Johnson</h5>
+               <a href="https://instagram.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-instagram insta" viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg></a>
+               <a href="https://twitter.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-twitter twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a>
+               <a href="https://facebook.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-facebook facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-left" class="trainer-div2">
+        <img src="Images/t3.jpg" class="trainer" style="position: relative">
+        <div class="trainer-info">
+          <div data-aos="fade-up">
+            <h6 style="font-family: 'Rubik', sans-serif;font-weight: 10;">
+              <hr class="hr">Senior Trainer
+            </h6>
+            <h5 style="font-family: 'Rubik', sans-serif;font-weight: bold;">Michael Johnson</h5>
+            <a href="https://instagram.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-instagram insta" viewBox="0 0 16 16">
+                <path
+                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a>
+               <a href="https://twitter.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-twitter twitter" viewBox="0 0 16 16">
+              <path
+                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+            </svg></a>
+               <a href="https://facebook.com/"class="social-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-facebook facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="Products">
+    <center>
+      <h1 class="text-danger my-3">Products</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <div class="owl-carousel owl-theme">
+      <div class="item"><img src="Images/p1.jpg"></div>
+      <div class="item"><img src="Images/p2.jpg"></div>
+      <div class="item"><img src="Images/p3.jpg"></div>
+      <div class="item"><img src="Images/p4.jpg"></div>
+      <div class="item"><img src="Images/p5.jpg"></div>
+      <div class="item"><img src="Images/p6.jpg"></div>
+      <div class="item"><img src="Images/p7.jpg"></div>
+      <div class="item"><img src="Images/p8.jpg"></div>
+    </div>
+  </section>
+  <section id="Gallery">
+    <center>
+      <h1 class="text-danger my-3">Gallery</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <div class="container-fluid my-5">
+      <div class="row">
+        <div class="col-md-6" style="position: relative;">
+          <div data-aos="fade-down">
+          <img src="Images/main-image.jpg" style="width: 100%;height: 99.5%;">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div data-aos="fade-left">
+          <img src="Images/img1.jpg" style="width: 48%;height: 49%;float: left;clear: left;"class="trainers-image">
+          </div>
+          <div data-aos="fade-left">
+          <img src="Images/img2.jpg" style="width: 48%;height: 49%;float: right;clear: right;"class="trainers-image">
+          </div>
+          <div data-aos="fade-left">
+          <img src="Images/img3.jpg" style="width: 48%;height: 49%;margin-top: 2%;float: left;clear: left;"class="trainers-image">
+          </div>
+          <div data-aos="fade-left">
+          <img src="Images/img4.jpg" style="width: 48%;height: 49%;margin-top: 2%;float: right;clear: right;"class="trainers-image">
+        </div>
+        </div>
+      </div>
+      <center> <button class="custom-btn btn-14 my-5" style="font-family: antonio;text-transform: uppercase;">View
+          More</button>
+      </center>
+    </div>
+    </div>
+    </div>
+  </section>
+  </section>
+  <section id="Contact Us">
+    <center>
+      <h1 class="text-danger my-3">Contact Us</h1>
+    </center>
+    <center>
+      <hr style="width: 100px;height: 5px;color: #dc3545;opacity: 1;">
+    </center>
+    <div class="container-fluid my-5">
+      <div data-aos="fade-down">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28647.077004736944!2d91.74286952449557!3d26.16788669103956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5a3028a77779%3A0x72acd22f01453414!2sPeter&#39;s%20Gym!5e0!3m2!1sen!2sin!4v1622973463030!5m2!1sen!2sin"
+        width="650" height="650" class="map" allowfullscreen="" loading="lazy"></iframe>
+      <div class="form my-5">
+        <h1 style="font-family: 'Teko', sans-serif;font-size: 50px;color: red;text-transform: uppercase;" class="mb-5">
+          Feel Free To Contact Us</h1>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="First name" aria-label="First name"
+              style="font-family: 'Rubik', sans-serif;border: none;border-radius: 0px;border-bottom: 1px solid red;">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name"
+              style="font-family: 'Rubik', sans-serif;border: none;border-radius: 0px;border-bottom: 1px solid red;">
+          </div>
+          <div class="mb-3 my-3">
+            <input type="email" class="form-control" id="exampleFormControlInput1"
+              style="font-family: 'Rubik', sans-serif;border: none;border-radius: 0px;border-bottom: 1px solid red;"
+              placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+              style="font-family: 'Rubik', sans-serif;border: none;border-radius: 0px;border-bottom: 1px solid red;"
+              placeholder="Enter Your Query"></textarea>
+          </div>
+        </div>
+        <button class="custom-btn btn-14 my-3" style="font-family: antonio;text-transform: uppercase;">Send
+          Message</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <div class="container-fluid">
+  <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row">
+      <div class="col-12 col-md">
+        <img class="mb-2" src="../../assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+        <small class="d-block mb-3 text-muted">&copy; 2017-2018</small>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Features</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Cool stuff</a></li>
+          <li><a class="text-muted" href="#">Random feature</a></li>
+          <li><a class="text-muted" href="#">Team feature</a></li>
+          <li><a class="text-muted" href="#">Stuff for developers</a></li>
+          <li><a class="text-muted" href="#">Another one</a></li>
+          <li><a class="text-muted" href="#">Last time</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Resources</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Resource</a></li>
+          <li><a class="text-muted" href="#">Resource name</a></li>
+          <li><a class="text-muted" href="#">Another resource</a></li>
+          <li><a class="text-muted" href="#">Final resource</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#">Team</a></li>
+          <li><a class="text-muted" href="#">Locations</a></li>
+          <li><a class="text-muted" href="#">Privacy</a></li>
+          <li><a class="text-muted" href="#">Terms</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>Nav Links</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="text-muted" href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a class="text-muted" href="#"><i class="fas fa-facebook"></i></a></li>
+          <li><a class="text-muted" href="#"><i class="fas fa-tweeter"></i></a></li>
+          <li><a class="text-muted" href="#"><i class="fas fa-quora"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+<!-- JavaScript Code -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > 500) {
+          $(".bg").css("background", "#212529");
+        }
+
+        else {
+          $(".bg").css("background", "transparent");
+        }
+      })
+      $('.trainer-div').mouseenter(function () {
+        $('.trainer-info').css('background-color', 'red');
+        $('trainer-info').fadeIn(2000);
+        $('.insta').show();
+        $('.twitter').show();
+        $('.facebook').show();
+        $('svg').css('display', 'initial');
+        $('.hr').css('color', 'white');
+      })
+      $('.trainer-div').mouseleave(function () {
+        $('.trainer-info').css('background-color', 'transparent');
+        $('.twitter').hide();
+        $('.facebook').hide();
+        $('.insta').hide();
+        $('.hr').css('color', 'red');
+      })
+
+      $('.trainer-div1').mouseenter(function () {
+        $('.trainer-info').css('background-color', 'red');
+        $('trainer-info').fadeIn(2000);
+        $('.insta').show();
+        $('.twitter').show();
+        $('.facebook').show();
+        $('svg').css('display', 'initial');
+        $('.hr').css('color', 'white');
+      })
+      $('.trainer-div1').mouseleave(function () {
+        $('.trainer-info').css('background-color', 'transparent');
+        $('.twitter').hide();
+        $('.facebook').hide();
+        $('.insta').hide();
+        $('.hr').css('color', 'red');
+      })
+
+      $('.trainer-div2').mouseenter(function () {
+        $('.trainer-info').css('background-color', 'red');
+        $('trainer-info').fadeIn(2000);
+        $('.insta').show();
+        $('.twitter').show();
+        $('svg').css('display', 'initial');
+        $('.facebook').show();
+        $('.hr').css('color', 'white');
+      })
+      $('.trainer-div2').mouseleave(function () {
+        $('.trainer-info').css('background-color', 'transparent');
+        $('.twitter').hide();
+        $('.facebook').hide();
+        $('.insta').hide();
+        $('.hr').css('color', 'red');
+      })
+      $('.button1').mouseenter(function(){
+        $('.icon').css('color', 'red');
+        $(this).css('border', '2px solid red');
+        $(this).css('backgroundColor', 'white')
+      })
+      $('.button1').mouseleave(function(){
+        $('.icon').css('color', 'white');
+        $(this).css('border', '2px solid red');
+        $(this).css('backgroundColor', 'red')
+      })
+    })
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+  
+<script>
+  var myVar;
+  
+  function myfunction() {
+    myVar = setTimeout(showPage, 1000);
+    document.getElementsByClassName("navbar").style.visibility = "hidden";
+    document.getElementById("loader").style.visibility = "visible";
+    document.getElementById("Home").style.zIndex = "1";
+    document.getElementById("loader").style.visibility = "visible";
+    document.getElementById("Services").style.visibility = "hidden";
+    document.getElementById("Trainers").style.visibility = "hidden";
+    document.getElementById("About").style.visibility = "hidden";
+    document.getElementById("Contact Us").style.visibility = "hidden";
+    document.getElementById("Gallery").style.visibility = "hidden";
+    document.getElementById("Products").style.visibility = "hidden";
+  }
+  function showPage() {
+    document.getElementsByClassName("navbar").style.visibility = "visible";
+    document.getElementById("loader").style.visibility = "visible";
+    document.getElementById("loader").style.zIndex = "0";
+    document.getElementById("Home").style.visibility = "visible";
+    document.getElementById("Services").style.visibility = "visible";
+    document.getElementById("Trainers").style.visibility = "visible";
+    document.getElementById("About").style.visibility = "visible";
+    document.getElementById("Contact Us").style.visibility = "visible";
+    document.getElementById("Gallery").style.visibility = "visible";
+    document.getElementById("Products").style.visibility = "visible";
+    }
+  
+  </script>
+  
+  <script src="bootstrap.min.js"></script>
+</body>
+</html>
