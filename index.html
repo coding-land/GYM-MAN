@@ -183,6 +183,7 @@
 
       .img {
         min-height: 150vh !important;
+        overflow-y: hidden;
       }
 
       .info {
@@ -350,7 +351,7 @@
 
     .img {
       /* The image used */
-      background: linear-gradient(to right, black, transparent), url("https://source.unsplash.com/1600x2000/?gym,fitness");
+      background: linear-gradient(to right, black, transparent), url("https://source.unsplash.com/1600x900/?gym,fitness");
       /* Set a specific height */
       min-height: 100vh;
 
@@ -460,9 +461,7 @@
       margin: 50px auto;
       text-align: center;
     }
-main{
-display: none;
-}
+
     .map {
       border: 0;
       display: inline-block
@@ -869,10 +868,11 @@ display: none;
   </style>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
 
+  <div id="loader"></div>
 
- 
+  <main style="display:none;" id="myDiv" class="animate-bottom">
     <a href="#"><button class="up-button"><i class="fas fa-angle-up"></i></button></a>
     <section id="Whole-Sections">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg">
@@ -1144,8 +1144,8 @@ display: none;
               </div>
             </div>
           </div>
-          <center> <a href="#Gallery"><button class="custom-btn btn-14 my-5" style="font-family: antonio;text-transform: uppercase;">View
-            More</button></a>
+          <center> <button class="custom-btn btn-14 my-5" style="font-family: antonio;text-transform: uppercase;">View
+              More</button>
           </center>
         </div>
         </div>
@@ -1254,7 +1254,7 @@ display: none;
         </footer>
       </div>
     </section>
-  
+  </main>
   <!-- JavaScript Code -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
