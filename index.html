@@ -102,8 +102,22 @@
       color: white;
       padding-top: 35vh;
       padding-left: 150px;
+      animation-name: effect;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+      position: relative;
+      animation-timing-function: ease-in-out;
     }
-
+    @keyframes effect{
+      0%{
+        opacity: 0;
+        left: -100px;
+    }
+    100%{
+      opacity: 1;
+      left: 0px;
+    }
+    }
     .parallax {
       /* The image used */
       background-image: url("Images/image2.jpg");
@@ -183,7 +197,6 @@
 
       .img {
         min-height: 150vh !important;
-        overflow-y: hidden;
       }
 
       .info {
@@ -817,10 +830,8 @@
     /* Add animation to "page content" */
     .animate-bottom {
       position: relative;
-      -webkit-animation-name: animatebottom;
-      -webkit-animation-duration: 0.1s;
       animation-name: animatebottom;
-      animation-duration: 0.7s
+      animation-duration: 1s
     }
 
     @keyframes animatebottom {
@@ -916,7 +927,7 @@
       <section id="Home">
         <div class="img">
           <div class="info">
-            <div data-aos="fade-right" data-aos-delay="80" data-aos-duration="2000">
+            <div data-aos="fade-right">
               <h1 class="display-heading">You are nothing else but what you make of yourself.</h1>
             </div>
             <div data-aos="fade-up" data-aos-delay="80" data-aos-duration="2000">
