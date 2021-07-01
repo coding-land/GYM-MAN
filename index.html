@@ -879,11 +879,11 @@
   </style>
 </head>
 
-<body>
-<!-- 
+<body onload="myFunction()" style="margin:0;">
+
   <div id="loader"></div>
 
-<!--   <main style="display:initial;" id="myDiv" class="animate-bottom">  -->
+  <main style="display:initial;" id="myDiv" class="animate-bottom"> 
     <a href="#"><button class="up-button"><i class="fas fa-angle-up"></i></button></a>
     <section id="Whole-Sections">
       <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg">
@@ -1385,18 +1385,18 @@
       $('#more-text').css('display', 'initial');
     })
   </script>
-  <script>
-//     var myVar;
+   <script>
+     var myVar;
 
-//     function myFunction() {
-//       myVar = setTimeout(showPage, 3000);
-//     }
+     function myFunction() {
+       myVar = setTimeout(showPage, 3000);
+    }
 
-//     function showPage() {
-//       document.getElementById("loader").style.display = "none";
-//       document.getElementById("myDiv").style.display = "block";
-//     }
-//   </script>
+     function showPage() {
+  document.getElementById("loader").style.display = "none";
+       document.getElementById("myDiv").style.display = "block";
+    }
+ </script>
   <script src="bootstrap.min.js"></script>
 </body>
 
