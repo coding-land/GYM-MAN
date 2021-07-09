@@ -785,7 +785,7 @@ footer {
 }
 
 /* Center the loader */
-#loader {
+/* #loader {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -833,7 +833,7 @@ footer {
   border-radius: 50%;
 }
 
-/* Add animation to "page content" */
+ Add animation to "page content" 
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -870,7 +870,7 @@ footer {
 
 #myDiv {
   display: none;
-}
+} */
 
 .button2 {
   background-color: red;
